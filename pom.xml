@@ -30,10 +30,10 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.11.0</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -79,7 +79,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.2.201409121644</version>
+                <version>0.8.11</version>
                 <executions>
                     <execution>
                         <id>jacoco-initialize</id>
@@ -111,7 +111,7 @@
                 <version>2.8.2</version>
             </plugin>
 
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.easyb</groupId>
                 <artifactId>maven-easyb-plugin</artifactId>
                 <version>1.4</version>
@@ -128,7 +128,7 @@
                     <easybTestDirectory>src/test/stories</easybTestDirectory>
                     <jvmArguments>-Xmx512m -Dwebdriver.driver=${webdriver.driver}</jvmArguments>
                 </configuration>
-            </plugin>
+            </plugin> -->
 
             <plugin>
                 <groupId>com.jelastic</groupId>
@@ -147,7 +147,7 @@
 
         <pluginManagement>
             <plugins>
-                <plugin>
+                <!-- <plugin>
                     <groupId>org.easyb</groupId>
                     <artifactId>maven-easyb-plugin</artifactId>
                     <version>${easyb.version}</version>
@@ -163,7 +163,7 @@
                         <storyReport>${basedir}/target/easyb/easyb-report.html
                         </storyReport>
                     </configuration>
-                </plugin>
+                </plugin> -->
 
             </plugins>
         </pluginManagement>
@@ -189,7 +189,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -243,7 +243,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
-                        <version>3.2</version>
+                        <version>3.4.0</version>
                         <configuration>
                             <targetJdk>1.6</targetJdk>
                             <aggregate>true</aggregate>
@@ -308,7 +308,7 @@
                                 <plugin>
                                     <groupId>org.jacoco</groupId>
                                     <artifactId>jacoco-maven-plugin</artifactId>
-                                    <version>0.7.2.201409121644</version>
+                                    <version>0.8.11</version>
                                 </plugin>
                                 <plugin>
                                     <groupId>org.apache.maven.plugins</groupId>

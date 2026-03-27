@@ -1,4 +1,4 @@
-some changes to trigger poll scm on jenkins
+some changes to trigger poll scm on jenkins again
 This is a simple demonstration application used in the [Jenkins: The Definitive Guide](http://wakaleo.com/books/jenkins-the-definitive-guide) book.
 ## new changes
 ## git commit

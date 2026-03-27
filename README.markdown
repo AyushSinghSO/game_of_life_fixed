@@ -1,4 +1,4 @@
-some changes in the readme.md file
+some changes in the readme.md file and some more
 This is a simple demonstration application used in the [Jenkins: The Definitive Guide](http://wakaleo.com/books/jenkins-the-definitive-guide) book.
 ## new changes
 ## git commit

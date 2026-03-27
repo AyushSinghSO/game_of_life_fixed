@@ -14,14 +14,14 @@ pipeline{
           stage('Compile'){
               agent any
               steps{
-                  sh 'mvn compile'
+                  bat 'mvn compile'
               }
           }
           stage('UnitTest'){
               agent{label 'win_slave'}
               steps{
                   git branch:'main',url:'https://github.com/devops-trainer/game-of-life.git'
-                  sh 'mvn test'
+                  bat 'mvn test'
               }
               post{
                   always{
@@ -32,7 +32,7 @@ pipeline{
           stage('Package'){
               agent any
               steps{
-                  sh 'mvn package'
+                  bat 'mvn package'
               }
           }
          

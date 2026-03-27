@@ -8,7 +8,7 @@ pipeline{
           stage('Checkout'){
               agent any
               steps{
-                  git 'https://github.com/devops-trainer/game-of-life.git'
+                  git branch:'main',url:'https://github.com/devops-trainer/game-of-life.git'
               }
           }
           stage('Compile'){
@@ -18,9 +18,9 @@ pipeline{
               }
           }
           stage('UnitTest'){
-              agent{label 'linux_slave'}
+              agent{label 'win_slave'}
               steps{
-                  git 'https://github.com/devops-trainer/game-of-life.git'
+                  git branch:'main',url:'https://github.com/devops-trainer/game-of-life.git'
                   sh 'mvn test'
               }
               post{
